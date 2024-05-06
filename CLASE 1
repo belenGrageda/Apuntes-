@@ -1,0 +1,5 @@
+# Los 3 states
+Modificado(Modified): El archivo contiene el canbio actual que aun no se han sido guardado.
+Preparado(Staged): Los archivos que han sido marcado y han sido confirmados en el repositorio local.
+Confirmado(Commited): El archivo se encuentra grabado en el repositorio local.
+GIT COMMIT
