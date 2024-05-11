@@ -21,17 +21,18 @@ Sirve para incluir archivos nuevos en un directorio contreto
 # CLASE 2
 ## GIT BRANCH
 Permite crea,listar ,eliminar y renobar las ramas
-bash
+```bash
 git brach mi-primera-rama
-
+```
 ## GIT MERGE
 Sirve para incorporar los cambios de una rama a la rama en la que nos encontramos
 ## GIT CHECKOUT
 Cambia entre ramas y restura en el directorio de trabajo
 ## RESOLVER CONFLICTOS
 Es una situacion en la que no es capaz de determinar que cambio es el tiene prevalecer una vez ocurra la fusion
-bash
+```bash
 git diff
+```
 ++<<<<<<<HEAD
 
 ## GIT CONFIG
@@ -58,11 +59,15 @@ Pull Request : Es una peticion de cambios que se envia el repositorio original
 ## BUENAS PRACTICAS
 - Usar los verbos imperativos  
 add : Añade un nuevo archivo
-bash
+```bash
 git commit -m "añadimos un nuevo archivo."  # esta mal por el punto final
+```
+```bash
 git commit -m "para arreglar un problema..." # esta mal por los puntos suspensivos 
+```
+```bash
 git commit -m "cambiamos por defecto el sistema del color" # esta bien ya que no hay errores de sintaxis 
-
+```
 - Usar como maximo 50 caracteres para todos los mensajes de commit
 - Usar los prefijos para los commits
 
@@ -76,9 +81,9 @@ test : refactoriza un codigo ya  existente
 # CLASE 7
 ### COMO DESHACER MIS CAMBIOS?
 Hay dos formas de deshacer el ultimo commit.
-bash
+```bash
 git reset --soft HEAD-1
-
+```
 Con este comando que se hace en vez de eliminarlos,mantiene los cambios  que se hicieron en el commit 
 # CLASE 8
 ## Que es un Hook?
@@ -89,5 +94,6 @@ Nos permite ejecutar una accion o script cada vez que ocurre un evento en git.
 - posst-checkout y post-merge : permite limpiar el directorio de trabajo despues de hacer checkout que ya no se usan tras realizar un merge.
 ## QUE ES UN ALIAS?
 Nos permite crear nuestros propios comandos que se usan habitualmente
-bash
+```bash
 git config --global alias.[nombre-del-alias]
+```
