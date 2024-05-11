@@ -54,3 +54,40 @@ Pull Request : Es una peticion de cambios que se envia el repositorio original
  RAMAS PRINCIPALES
  MAIN: Su proposito es contener el codigo que encuentre en produccion 
  DEVELOP: Tienen caracteristicas que todavia tienen que ser probadas y validas
+ # CLASE 6
+## BUENAS PRACTICAS
+- Usar los verbos imperativos  
+add : Añade un nuevo archivo
+bash
+git commit -m "añadimos un nuevo archivo."  # esta mal por el punto final
+git commit -m "para arreglar un problema..." # esta mal por los puntos suspensivos 
+git commit -m "cambiamos por defecto el sistema del color" # esta bien ya que no hay errores de sintaxis 
+
+- Usar como maximo 50 caracteres para todos los mensajes de commit
+- Usar los prefijos para los commits
+
+feat : para una nueva caracteristica del usuario
+fix : bug que afecta al usuario 
+ perf : cambios que mejora los rendimientos     
+ build : para cambios del sistema  
+ci : para los cambios de integracion    
+refactor : refactorizacion de codigo      
+test : refactoriza un codigo ya  existente
+# CLASE 7
+### COMO DESHACER MIS CAMBIOS?
+Hay dos formas de deshacer el ultimo commit.
+bash
+git reset --soft HEAD-1
+
+Con este comando que se hace en vez de eliminarlos,mantiene los cambios  que se hicieron en el commit 
+# CLASE 8
+## Que es un Hook?
+Nos permite ejecutar una accion o script cada vez que ocurre un evento en git.
+- pre-commit : permite comprobar o es un bue sitio para ejecutar linter   
+- prepare-commit-msg : modifica o añade mensajes
+- pre-push :  ejecuta una bateria de test
+- posst-checkout y post-merge : permite limpiar el directorio de trabajo despues de hacer checkout que ya no se usan tras realizar un merge.
+## QUE ES UN ALIAS?
+Nos permite crear nuestros propios comandos que se usan habitualmente
+bash
+git config --global alias.[nombre-del-alias]
